@@ -22,10 +22,6 @@ public class CalculMentalServiceImpl implements CalculMentalService {
 		Utilisateur u = null;
 		List<Utilisateur> listeUtilisateur = dao.findByPseudo(pseudo);
 		
-		/*Utilisateur tom = new Utilisateur("Tom");
-		tom.setMeilleurScore(10);
-		listeUtilisateur.add(tom);*/
-		
 		//Si l'utilisateur n'est pas déjà en BDD, on le créé
 		if(listeUtilisateur.isEmpty())
 		{
@@ -36,6 +32,8 @@ public class CalculMentalServiceImpl implements CalculMentalService {
 		{
 			u = listeUtilisateur.get(0);
 		}
+		
+		u.setScore(0);
 		
 		return u;
 	}
@@ -94,14 +92,14 @@ public class CalculMentalServiceImpl implements CalculMentalService {
 	@Override
 	public void bonneReponse(Utilisateur utilisateur) 
 	{
-		// TODO Auto-generated method stub
-
+		int pointsParBonneReponse = 1;
+		utilisateur.setScore(utilisateur.getScore()+pointsParBonneReponse);
 	}
 
 	@Override
-	public void nouveauMeilleurScore(Utilisateur utilisateur) {
-		// TODO Auto-generated method stub
-
+	public void nouveauMeilleurScore(Utilisateur utilisateur) 
+	{
+		dao.save(utilisateur);
 	}
 
 	@Override

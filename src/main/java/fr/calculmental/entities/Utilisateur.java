@@ -15,6 +15,10 @@ public class Utilisateur
 	private Integer meilleurScore;
 	private Integer score;
 	
+	protected Utilisateur(){
+		
+	}
+	
 	public Utilisateur(String pseudo) {
 		super();
 		this.pseudo = pseudo;
