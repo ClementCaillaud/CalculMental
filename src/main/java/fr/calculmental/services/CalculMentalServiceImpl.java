@@ -103,9 +103,10 @@ public class CalculMentalServiceImpl implements CalculMentalService {
 	}
 
 	@Override
-	public List<Utilisateur> getMeilleursUtilisateurs() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Utilisateur> getMeilleursUtilisateurs() 
+	{
+		List<Utilisateur> meilleursScores = dao.findTop5ByOrderByMeilleurScoreDesc();
+		return meilleursScores;
 	}
 	
 	/**
