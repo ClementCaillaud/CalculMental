@@ -99,7 +99,7 @@ public class CalculMentalController implements CommandLineRunner
 			if (utilisateur.getScore() >= utilisateur.getMeilleurScore())
 			{
 				service.nouveauMeilleurScore(utilisateur);
-				System.out.println("Felicitations ! Vous avez battu votre meilleur score avec "+utilisateur.getScore()+" pts");
+				System.out.println("Felicitations ! Vous avez battu ou egaliser votre meilleur score avec "+utilisateur.getScore()+" pts");
 			}
 			else 
 			{
