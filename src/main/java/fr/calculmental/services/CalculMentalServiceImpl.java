@@ -99,6 +99,7 @@ public class CalculMentalServiceImpl implements CalculMentalService {
 	@Override
 	public void nouveauMeilleurScore(Utilisateur utilisateur) 
 	{
+		utilisateur.setMeilleurScore(utilisateur.getScore());
 		dao.save(utilisateur);
 	}
 
