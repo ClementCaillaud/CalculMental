@@ -6,6 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import fr.calculmental.entities.Utilisateur;
 
+/**
+ * La couche d'accès aux données de l'application CalculMental
+ * @author Clément
+ */
 public interface CalculMentalRepository extends JpaRepository<Utilisateur, Integer>
 {
 	/**

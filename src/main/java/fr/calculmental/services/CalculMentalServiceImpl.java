@@ -11,6 +11,10 @@ import fr.calculmental.entities.Utilisateur;
 import fr.calculmental.repository.CalculMentalRepository;
 
 @Service
+/**
+ * Implémentation de la couche métier de CalculMental
+ * @author Clément
+ */
 public class CalculMentalServiceImpl implements CalculMentalService {
 
 	@Autowired

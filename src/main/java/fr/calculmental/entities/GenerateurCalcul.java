@@ -2,6 +2,10 @@ package fr.calculmental.entities;
 
 import java.util.Random;
 
+/**
+ * Permet de générer un calcul aléatoire
+ * @author Clément
+ */
 public class GenerateurCalcul 
 {
 	public GenerateurCalcul()
@@ -9,14 +13,19 @@ public class GenerateurCalcul
 		
 	}
 	
+	/**
+	 * Génère un calcul aléatoire
+	 * @param nbMaxOperations Nombre maximum d'opérations dans le calcul
+	 * @return Un calcul aléatoire
+	 */
 	public Calcul genererCalcul(int nbMaxOperations)
 	{
-		StringBuffer expression = new StringBuffer();
-		float resultat = 0;
-		int nb1 = 0;
-		int nb2 = 0;
-		String ope = "";
-		int nbOperations = genererEntierAleatoire(1, nbMaxOperations);
+		StringBuffer expression = new StringBuffer();//Expression du calcul
+		float resultat = 0;//Le résultat
+		int nb1 = 0;//Le premier nombre de l'expression
+		int nb2 = 0;//Les autres nombres de l'expression
+		String ope = "";//L'opérateur
+		int nbOperations = genererEntierAleatoire(1, nbMaxOperations);//Le nombre d'opérations de l'expression
 		
 		//Ajout des parenthèses au début de l'expression
 		for(int i=0; i<nbOperations; i++)

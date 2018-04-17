@@ -1,9 +1,13 @@
 package fr.calculmental.entities;
 
+/**
+ * Une représentation du calcul, composée d'une expression et d'un résultat
+ * @author Clément
+ */
 public class Calcul 
 {
-	private String expression;
-	private float resultat;
+	private String expression;//L'expression du calcul
+	private float resultat;//Le résultat du calcul
 	
 	public Calcul(String expression, float resultat) 
 	{
@@ -12,6 +16,8 @@ public class Calcul
 		this.resultat = resultat;
 	}
 
+	/*GET et SET*/
+	
 	public String getExpression() {
 		return expression;
 	}
@@ -28,6 +34,8 @@ public class Calcul
 		this.resultat = resultat;
 	}
 
+	/*toString*/
+	
 	@Override
 	public String toString() {
 		return "Calcul [expression=" + expression + ", resultat=" + resultat + "]";
