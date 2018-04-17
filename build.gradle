@@ -1,0 +1,29 @@
+plugins {
+	id 'org.springframework.boot' version '2.0.0.RELEASE'
+	id 'java'
+}
+
+
+jar {
+	baseName = 'myproject'
+	version =  '0.0.1-SNAPSHOT'
+}
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+	// compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.0.RELEASE'
+	
+	// https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+	runtime group: 'org.hsqldb', name: 'hsqldb', version: '2.0.0'
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.0.RELEASE'
+	
+
+	testCompile("org.springframework.boot:spring-boot-starter-test")
+
+}
