@@ -7,7 +7,7 @@ import fr.calculmental.entities.Utilisateur;
 
 public interface CalculMentalService 
 {
-	public Utilisateur getUtilisateur(Utilisateur utilisateur);
+	public Utilisateur getUtilisateur(String pseudo);
 	
 	public Calcul genererCalcul();
 	
