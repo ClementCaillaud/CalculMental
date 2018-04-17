@@ -18,6 +18,8 @@ public class Utilisateur
 	public Utilisateur(String pseudo) {
 		super();
 		this.pseudo = pseudo;
+		this.meilleurScore = 0;
+		this.score = 0;
 	}
 
 	public String getPseudo() {

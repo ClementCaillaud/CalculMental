@@ -31,7 +31,7 @@ public interface CalculMentalService
 	 * @param reponse La réponse de l'utilisateur
 	 * @return Correct ou Incorrect
 	 */
-	public boolean verifierCalcul(Calcul calcul, int reponse);
+	public boolean verifierCalcul(Calcul calcul, float reponse);
 	
 	/**
 	 * Incrémente le score de l'utilisateur

@@ -3,9 +3,9 @@ package fr.calculmental.entities;
 public class Calcul 
 {
 	private String expression;
-	private int resultat;
+	private float resultat;
 	
-	public Calcul(String expression, int resultat) 
+	public Calcul(String expression, float resultat) 
 	{
 		super();
 		this.expression = expression;
@@ -20,11 +20,11 @@ public class Calcul
 		this.expression = expression;
 	}
 
-	public int getResultat() {
+	public float getResultat() {
 		return resultat;
 	}
 
-	public void setResultat(int resultat) {
+	public void setResultat(float resultat) {
 		this.resultat = resultat;
 	}
 
