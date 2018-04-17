@@ -142,6 +142,7 @@ public class CalculMentalController implements CommandLineRunner
 		}
 		while(rejouer);
 		
+		sc.close();
 		System.out.println("La partie est terminee... A bientot !");
 	}
 	
